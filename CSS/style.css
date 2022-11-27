@@ -1,0 +1,993 @@
+@import url('../Fonts/Filosofia OT Regular.otf');
+
+*{
+  margin: 0px;
+  height: 100%;
+  font-family: 'Filosofia OT Regular';
+}
+
+html{
+  height: 100%;
+}
+
+body > .Nav_Container{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: transparent;
+  z-index: 5;
+  padding: 2rem;
+  font-size: 1.375em;
+}
+
+body > .Nav_Container > header > button{
+  display: block;
+  border: none;
+  background-color: white;
+  padding: 0.375em 0.5em 0.2em;
+}
+
+body > .Nav_Container > header > button:hover{
+  cursor: pointer;
+}
+
+body > .Nav_Container > nav > div{
+  display: flex;
+  color: white;
+}
+
+body > .Nav_Container > nav > div > a,p{
+  position: bottom;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+body > .Nav_Container > nav > div > a:hover{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+body > .Static-bg{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  filter: grayscale(1) brightness(1.3);
+  z-index: -1;
+}
+
+@keyframes SlideShow{
+  0% {
+    content: url('https://luca.restaurant/wp-content/uploads/main_bg-1400x1056.jpg');
+    object-fit: cover;
+    object-position: left 0px top -60px bottom 60px;
+    z-index: 0;
+  }
+  25%{
+    content: url('https://luca.restaurant/wp-content/uploads/Anton-Rodriguez-0P4A9259.jpg');
+    object-fit: cover;
+    object-position: left 0px top -60px bottom 60px;
+    z-index: 0;
+  }
+  50%{
+    content: url('https://luca.restaurant/wp-content/uploads/Luca-rest16299-1400x934.jpg');
+    object-fit: cover;
+    object-position: left 0px top -60px bottom 60px;
+    z-index: 0;
+  }
+  75%{
+    content: url('https://luca.restaurant/wp-content/uploads/Luca-rest16379-1400x934.jpg');
+    object-fit: cover;
+    object-position: left 0px top -60px bottom 60px;
+    z-index: 0;
+  }
+  100%{
+    content: url('https://luca.restaurant/wp-content/uploads/RESTAURANT_6_093-1400x933.jpg');
+    object-fit: cover;
+    object-position: left 0px top -60px bottom 60px;
+    z-index: 0;
+  }
+}
+
+body > .Slideshow > .Container{
+  object-fit: cover;
+}
+
+body > .Slideshow > .Container > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left 0px top -60px bottom 60px;
+  content: url('https://luca.restaurant/wp-content/uploads/main_bg-1400x1056.jpg');
+  animation: SlideShow 15s linear infinite;*/
+  z-index: -1;
+}
+
+body > .Slideshow > #Logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28%;
+  height: auto;
+}
+
+body > .Slideshow > .Info{
+  width: 100%;
+  height: auto;
+  font-size: 1.375em;
+  display: flex;
+  position: absolute;
+  bottom: 1.125em;
+}
+
+body > .Slideshow > .Info > .Left{
+  width: 100%;
+  height: auto;
+}
+
+body > .Slideshow > .Info > .Left > a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10%;
+}
+
+body > .Slideshow > .Info > .Left > a:hover{
+  border-bottom: 1px solid white;
+}
+
+body > .Slideshow > .Info > .Right{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+body > .Slideshow > .Info > .Right > a{
+  text-decoration: none;
+  color: white;
+}
+
+body > .Slideshow > .Info > .Right > a:hover{
+  border-bottom: 1px solid white;
+}
+
+body > .White_Box{
+  background-color: #e4e4e4;
+  opacity: 80%;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: table;
+}
+
+body > .White_Box > p{
+  color: black;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 2rem;
+}
+
+body > .Restaurant{
+  display: flex;
+}
+
+body > .Restaurant > .Left{
+  float: left;
+  background-color: #dc4c2c;
+  opacity: 90%;
+  width: 100%;
+  height:100%;
+  justify-content: center;
+}
+
+body > .Restaurant > .Left > .Container > img{
+  transform: scale(0.60);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+body > .Restaurant > .Left > .Container > .Content{
+  height: auto;
+}
+
+body > .Restaurant > .Left > .Container > .Content > div{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+}
+
+body > .Restaurant > .Left > .Container > .Content > div > p{
+  font-size: 1.375em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 32.5px;
+  padding-bottom: 40px;
+}
+
+body > .Restaurant > .Left > .Container > .Content > div > div > button{
+  width: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+body > .Restaurant > .Left > .Container > .Content > div  > div >  button:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+body > .Restaurant > .Right{
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Restaurant_1.jpg');
+  width: 100%;
+  height:100%;
+}
+
+body > .Christmas{
+  display: flex;
+}
+
+body > .Christmas > .Left{
+  width: 100%;
+  height:100%;
+  vertical-align: middle;
+}
+
+body > .Christmas > .Left > img{
+  z-index: -1;
+  object-fit: cover;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+body > .Christmas > .Right{
+  width: 100%;
+  height:100%;
+  display: inline-block;
+  background-color: #d4440c;
+  opacity: 90%;
+}
+
+body > .Christmas > .Right > .Container > .Content{
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Christmas > .Right > .Container > img{
+  transform: scale(0.60);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+body > .Christmas > .Right > .Container > .Content > div{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+}
+
+body > .Christmas > .Right > .Container > .Content > div > p{
+  font-size: 1.375em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+body > .Christmas > .Right > .Container > .Buttons{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+body > .Christmas > .Right > .Container > .Buttons > div{
+  width: 10px;
+  height: 10px;
+}
+
+body > .Christmas > .Right > .Container > .Buttons > a{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  display: block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  text-decoration: none;
+  color: black;
+}
+
+body > .Christmas > .Right > .Container > .Buttons > a:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+body > .Bar{
+  display: flex;
+}
+
+body > .Bar > .Left{
+  width: 100%;
+  height:100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #c7b490;
+  opacity: 90%;
+}
+
+body > .Bar > .Left > .Container > img{
+  transform: scale(0.60);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+body > .Bar > .Left > .Container > .Content{
+  height: auto;
+}
+
+body > .Bar > .Left > .Container > .Content > div{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+}
+
+body > .Bar > .Left > .Container > .Content > div > p{
+  font-size: 1.375em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 32.5px;
+  padding-bottom: 40px;
+}
+
+body > .Bar > .Left > .Container > .Content > div > div > button{
+  width: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+body > .Bar > .Left > .Container > .Content > div  > div >  button:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+body > .Bar > .Right{
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Bar_1.jpg');
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body > .Private_Dining{
+  display: flex;
+  height: 70%;
+}
+
+body > .Private_Dining > .Left{
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Private_Dining_1.jpeg');
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body > .Private_Dining > .Right{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #c7b490;
+  opacity: 90%;
+}
+
+body > .Private_Dining > .Right > .Container > .Content{
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Private_Dining > .Right > .Container > img{
+  transform: scale(0.80);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+body > .Private_Dining > .Right > .Container > .Content > div{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+}
+
+body > .Private_Dining > .Right > .Container > .Content > div > p{
+  font-size: 1.375em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+body > .Private_Dining > .Right > .Container > .Buttons{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+body > .Private_Dining > .Right > .Container > .Buttons > div{
+  width: 10px;
+  height: 10px;
+}
+
+body > .Private_Dining > .Right > .Container > .Buttons > a{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  display: block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  text-decoration: none;
+  color: black;
+}
+
+body > .Private_Dining > .Right > .Container > .Buttons > a:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+body > .Gifts{
+  display: flex;
+  height: 60%;
+}
+
+body > .Gifts > .Left{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d5c94f;
+  opacity: 85%;
+}
+
+body > .Gifts > .Right{
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Gifts_1.jpg');
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body > .Gifts > .Left > .Container > .Content{
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Gifts > .Left > .Container > img{
+  transform: scale(0.80);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+body > .Gifts > .Left > .Container > .Content > div{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+}
+
+body > .Gifts > .Left > .Container > .Content > div > p{
+  font-size: 1.375em;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+body > .Gifts > .Left > .Container > .Buttons{
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+body > .Gifts > .Left > .Container > .Buttons > div{
+  width: 10px;
+  height: 10px;
+}
+
+body > .Gifts > .Left > .Container > .Buttons > a{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: 1px solid black;
+  display: block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  text-decoration: none;
+  color: black;
+}
+
+body > .Gifts > .Left > .Container > .Buttons > a:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+body > .Reservations{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #070f44;
+  opacity: 85%;
+}
+
+body > .Reservations > .Parent{
+  width: 100%;
+  height: auto;
+}
+
+body > .Reservations > .Parent > .Child{
+  width: 100%;
+  height: auto;
+}
+
+body > .Reservations > .Parent > .Child > img{
+  width: 100%;
+  transform: scale(0.3);
+  height: auto;
+}
+
+body > .Reservations > .Parent > .Child > .Text{
+  width: 30%;
+  text-align: center;
+  justify-content: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: 30rem;
+}
+
+body > .Reservations > .Parent > .Child > .Text > p{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+body > .Reservations > .Parent > .Child > .Text > p > a{
+  text-decoration: none;
+  color: white;
+}
+
+body > .Reservations > .Parent > .Child > .Text > p > a:hover{
+  border-bottom: 1px solid white;
+}
+
+body > .Reservations > .Parent > .Child > .Button{
+  height: auto;
+  padding: 50px;
+}
+
+body > .Reservations > .Parent > .Child > .Button > Button{
+  width: auto;
+  background-color: white;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+body > .Reservations > .Parent > .Child > .Button > Button:hover{
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+body > .Menus{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #7c5c14;
+  opacity: 85%;
+}
+
+body > .Menus > .Container{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Menus > .Container > img{
+  width: 100%;
+  transform: scale(0.4);
+  height: 20%;
+}
+
+body > .Menus > .Container > .Text{
+  text-align: center;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Menus > .Container > .Text > p{
+  font-size: 1.375em;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 100%;
+  height: auto;
+}
+
+body > .Menus > .Container > .Buttons{
+  display: flex;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+body > .Menus > .Container > .Buttons > div > ul,li{
+  list-style: none;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+
+body > .Menus > .Container > .Buttons > .Left > ul > li > a{
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  color: #7c5808;
+  text-decoration: none;
+}
+
+body > .Menus > .Container > .Buttons > .Left > ul > li > a:hover{
+  background: transparent;
+  color: white;
+}
+
+body > .Menus > .Container > .Buttons > .Right > ul > li > a{
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  color: #7c5808;
+  text-decoration: none;
+}
+
+body > .Menus > .Container > .Buttons > .Right > ul > li > a:hover{
+  background: transparent;
+  color: white;
+}
+
+body > .Press{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #7cbca4;
+  opacity: 85%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Press > .Container{
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Press > .Container > .Header{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Press > .Container > .Header > img{
+  display: block;
+  margin-top: 50px;
+  transform: scale(0.5);
+}
+
+body > .Press > .Container > .Text{
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .Press > .Container > .Text > p{
+  color: black;
+  font-size: 2.125em;
+  margin-top: 50px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body > .Press > .Container > .Text > div{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
+
+body > .Press > .Container > .Text > div > img{
+  margin-left: 50%;
+  transform: translate(-50%) scale(0.4);
+}
+
+body > .Hours{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+body > .Hours > .Left{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #4d708e;
+}
+
+body > .Hours > .Left > .Container > img{
+  padding-top: 70px;
+  width: 100%;
+  transform: scale(0.6);
+  height: auto;
+}
+
+body > .Hours > .Left > .Container > .Text{
+  height: auto;
+  width: auto;
+}
+
+body > .Hours > .Left > .Container > .Text > p{
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+body > .Hours > .Left > .Container > .Text > .Header{
+  text-decoration: underline;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+body > .Hours > .Left > .Container > .Text > a{
+  width: auto;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1rem 1rem 0.75rem;
+  font-size: 1em;
+  letter-spacing: .2em;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+body > .Hours > .Left > .Container > .Text > a:hover{
+  color: black;
+  background-color: white;
+}
+
+body > .Hours > .Right{
+  width: 100%;
+  height: 100%;
+}
+
+body > .Contact{
+  background-color: #e9e3a4;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+body > .Contact > img{
+  transform: scale(0.3);
+  height: auto;
+}
+
+body > .Contact > .Text{
+  width: 100%;
+  height: auto;
+  font-size: 0.9375em;
+  text-align: center;
+}
+
+body > .Contact > .Text > p{
+  color: black;
+}
+
+body > .Contact > .Container{
+  width: 20%;
+  height: auto;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: 1em .75em .75em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+body > .Contact > .Container > form{
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+body > .Contact > .Container > form > input{
+  width: 100%;
+  line-height: 1;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: black;
+  margin-bottom: 0.625rem;
+  border-radius: 0;
+  border: 1px solid black;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: 1em .75em .75em;
+}
+
+body > .Contact > .Container > form > button{
+  font-family: Filosofia OT Regular;
+  letter-spacing: 2px;
+  border-radius: 13px;
+  padding: 10px;
+  width: 130px;
+  margin-top: 20px;
+  border: 1px solid black;
+  background: transparent;
+  margin-top: 20px;
+}
+
+body > .Contact > .SVG{
+  height: auto;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+body > .Contact > .SVG > svg{
+  width: 350px;
+  margin: 80px 50px 80px 50px;
+  opacity: 50%;
+  display: block;
+  margin: auto;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+body > .Contact > .SVG > svg:hover{
+  fill: white;
+  cursor: pointer;
+}
+
+body > .Contact > .Footer{
+  height: auto;
+}
+
+body > .Contact > .Footer > footer{
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+body > .Contact > .Footer > footer > a{
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+}
